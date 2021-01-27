@@ -1,38 +1,60 @@
-<h1>Bob's Burgers!</h1>
+<h1>Come (M)EAT some of Bob's Burgers</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div id="onTheMenu">
+        <h2>Eat up!</h2>
 
-<h2>Fresh off the grill!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless eaten}}
-    {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Specials!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if eaten}}
-    {{> burgers/burger-block eaten=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Special</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="ca">special:</label>
-        <input type="text" id="ca" name="name">
+        <ul>
+          {{#each burgers}}
+          {{#unless eaten}}
+          {{> burger/burger-block eaten=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
     </div>
 
-    <div class="form-group">
-        <label for="eaten">Add to Menu?</label><br>
-        <input type="radio" name="eaten" value="1" checked> added to menu <br>
-        <input type="radio" name="eaten" value="0"> coming right up
+    <div class="col-4">
+      <img src="https://media2.giphy.com/media/8mpNkyiYXHDmZp7fYY/source.gif" alt="Gene with a burger" height="400px"
+        width="300px">
     </div>
 
-    <button type="submit">Add Special</button>
-</form>
+    <div class="col-4">
+      <div id="eatUp">
+        <h2>On the Menu!</h2>
+
+        <ul>
+          {{#each burgers}}
+          {{#if eaten}}
+          {{> burger/burger-block eaten=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div id="inTheKitchen">
+          <h2>In the Kitchen</h2>
+          <form class="create-form">
+
+            <div class="form-group">
+              <label for="ca">Create a Burger:</label>
+              <input type="text" id="ca" name="name">
+            </div>
+
+            <div class="form-group">
+              <label for="eaten">ON THE MENU</label><br>
+              <input type="radio" name="eaty" value="1" checked> On the Menu!<br>
+              <input type="radio" name="eaty" value="0"> Order up
+            </div>
+
+            <button type="submit" class="btn btn-outline-secondary">Add Burger</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

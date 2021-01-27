@@ -1,0 +1,9 @@
+<li>
+	{{name}}
+
+	<button class="change-eaten btn btn-outline-secondary" data-id="{{id}}" data-eaten="{{eaten}}">
+		{{#if eaten}}OM THEM NOMS{{else}}Order Up!{{/if}}
+	</button>
+
+	<button class="delete-burgers btn btn-outline-secondary" data-id="{{this.id}}">DELETE!</button>
+</li>

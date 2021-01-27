@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-![snapshot]:(https://github.com/Lax-Walrus/the-best-burger-app/blob/main/photos/screencapture-createabob-herokuapp-2021-01-26-17_39_45.png)
+![snapshot](https://github.com/Lax-Walrus/the-best-burger-app/blob/main/photos/screencapture-createabob-herokuapp-2021-01-26-17_39_45.png?raw=true)
 
 ## description:
 
